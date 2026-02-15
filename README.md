@@ -2,11 +2,11 @@
 
 Clean, minimal implementations of machine learning algorithms built from first principles.
 
-This repository contains code referenced in my blog series **"From Neurons to LLMs"** where I document my journey learning AI/ML fundamentals.
+This repository contains code referenced in my blog series **"From Perceptrons to transformers"** where I document my journey learning AI/ML fundamentals.
 
 ## 📚 Blog Series
 
-Read the full series on [Dev.to](https://dev.to/yourusername)
+Read the full series on [Dev.to](https://dev.to/rnilav)
 
 ## 📂 What's Inside
 
@@ -18,8 +18,8 @@ Each module contains:
 
 ### Available Modules
 
-1. **[01-perceptron/](01-perceptron/)** - The first artificial neuron (1958)
-   - Blog: [The First Artificial Neuron: Where It All Started](https://dev.to/yourusername/perceptron)
+1. **[01-perceptron/](01-perceptron/)** - The first artificial neuron
+   - Blog: [The First Artificial Neuron: Where It All Started](TBU)
    
 2. **[02-xor-problem/](02-xor-problem/)** - Coming soon
 
@@ -58,11 +58,6 @@ This repository follows a **first principles approach**:
 - See working code with real examples
 - Learn by doing and experimenting
 
-## 📖 Related Repositories
-
-- **Blog posts:** [ai-learning-journey](https://github.com/yourusername/ai-learning-journey) - Full blog post markdown files
-- **Learning workspace:** [neurons-to-llms](https://github.com/yourusername/neurons-to-llms) - Complete project with tests, docs, and experiments
-
 ## 🤝 Contributing
 
 Found a bug or have a suggestion? Open an issue or submit a pull request!
@@ -73,9 +68,9 @@ MIT License - Feel free to use this code for learning.
 
 ## 🔗 Connect
 
-- **Dev.to:** [@yourusername](https://dev.to/yourusername)
-- **LinkedIn:** [Your Name](https://linkedin.com/in/yourprofile)
-- **GitHub:** [@yourusername](https://github.com/yourusername)
+- **Dev.to:** [@yourusername](https://dev.to/rnilav)
+- **LinkedIn:** [Your Name](https://linkedin.com/in/rnilav)
+- **GitHub:** [@yourusername](https://github.com/rnilav)
 
 ---
 
