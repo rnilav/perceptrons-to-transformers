@@ -1,8 +1,10 @@
 # Perceptrons to Transformers
 
-Clean, minimal implementations of machine learning algorithms built from first principles.
+Clean, minimal implementations of machine learning algorithms built from first principles. 
 
 This repository contains code referenced in my blog series **"From Perceptrons to transformers"** where I document my journey learning AI/ML fundamentals.
+
+Disclaimer: Code in the repo has been developed with the help of AI coding assistant tools.
 
 ## 📚 Blog Series
 
