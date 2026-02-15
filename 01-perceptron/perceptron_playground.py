@@ -346,7 +346,7 @@ with st.expander("❓ Why XOR Fails"):
 st.markdown("---")
 st.markdown("""
 <div style='text-align: center'>
-    <p>Built with ❤️ for AI education | 
+    <p>Built for AI education | 
     <a href='https://github.com/yourusername/perceptrons-to-transformers'>GitHub</a></p>
 </div>
 """, unsafe_allow_html=True)
