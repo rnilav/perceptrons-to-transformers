@@ -4,7 +4,7 @@ The perceptron, invented by Frank Rosenblatt in 1958, was the first artificial n
 
 ## 📖 Blog Post
 
-Read the full explanation: [TUnderstanding Perceptrons: The Foundation of Modern AI](https://dev.to/rnilav)
+Read the full explanation - [Understanding Perceptrons: The Foundation of Modern AI]:(https://dev.to/rnilav/understanding-perceptrons-the-foundation-of-modern-ai-2g04)
 
 ## 🎯 What It Does
 

@@ -6,7 +6,7 @@ This repository contains code referenced in my blog series **"From Perceptrons t
 
 ## 📚 Blog Series
 
-Read the full series on (https://dev.to/rnilav)
+Read the full series on (https://dev.to/rnilav/understanding-perceptrons-the-foundation-of-modern-ai-2g04)
 
 ## 📂 What's Inside
 
