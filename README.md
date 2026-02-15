@@ -6,7 +6,7 @@ This repository contains code referenced in my blog series **"From Perceptrons t
 
 ## 📚 Blog Series
 
-Read the full series on [Dev.to](https://dev.to/rnilav)
+Read the full series on (https://dev.to/rnilav)
 
 ## 📂 What's Inside
 
@@ -19,7 +19,6 @@ Each module contains:
 ### Available Modules
 
 1. **[01-perceptron/](01-perceptron/)** - The first artificial neuron
-   - Blog: [The First Artificial Neuron: Where It All Started](TBU)
    
 2. **[02-xor-problem/](02-xor-problem/)** - Coming soon
 

@@ -4,7 +4,7 @@ The perceptron, invented by Frank Rosenblatt in 1958, was the first artificial n
 
 ## 📖 Blog Post
 
-Read the full explanation: [The First Artificial Neuron: Where It All Started](https://dev.to/yourusername/perceptron)
+Read the full explanation: [TUnderstanding Perceptrons: The Foundation of Modern AI](https://dev.to/rnilav)
 
 ## 🎯 What It Does
 
@@ -14,7 +14,7 @@ The perceptron can learn simple logic gates like AND and OR by adjusting weights
 
 - **`perceptron.py`** - Core implementation with training algorithm
 - **`perceptron_playground.py`** - Interactive Streamlit app
-- **`01_perceptron.ipynb`** - Jupyter notebook with step-by-step walkthrough
+- **`perceptron.ipynb`** - Jupyter notebook with step-by-step walkthrough
 
 ## 🚀 Quick Start
 
@@ -57,7 +57,7 @@ print(f"Accuracy: {accuracy:.1%}")  # 100%
 ### Explore the Notebook
 
 ```bash
-jupyter notebook 01_perceptron.ipynb
+jupyter notebook perceptron.ipynb
 ```
 
 The notebook covers:
@@ -126,8 +126,4 @@ After mastering the perceptron, explore:
 
 ## 🔗 References
 
-1. Rosenblatt, F. (1958). The perceptron: A probabilistic model for information storage and organization in the brain. *Psychological Review*, 65(6), 386-408.
-
-2. McCulloch, W. S., & Pitts, W. (1943). A logical calculus of the ideas immanent in nervous activity. *The Bulletin of Mathematical Biophysics*, 5(4), 115-133.
-
-3. Nielsen, M. (2015). *Neural Networks and Deep Learning*. Available at: http://neuralnetworksanddeeplearning.com/
+1. Nielsen, M. (2015). *Neural Networks and Deep Learning*. Available at: http://neuralnetworksanddeeplearning.com/
