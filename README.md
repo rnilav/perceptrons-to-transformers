@@ -4,8 +4,6 @@ Clean, minimal implementations of machine learning algorithms built from first p
 
 This repository contains code referenced in my blog series **"From Perceptrons to transformers"** where I document my journey learning AI/ML fundamentals.
 
-Disclaimer: Code in the repo has been developed with the help of AI coding assistant tools.
-
 ## 📚 Blog Series
 
 Read the full series on [Dev.to](https://dev.to/rnilav)
@@ -70,10 +68,10 @@ MIT License - Feel free to use this code for learning.
 
 ## 🔗 Connect
 
-- **Dev.to:** [@yourusername](https://dev.to/rnilav)
-- **LinkedIn:** [Your Name](https://linkedin.com/in/rnilav)
-- **GitHub:** [@yourusername](https://github.com/rnilav)
+- **Dev.to:** [https://dev.to/rnilav]
+- **LinkedIn:** [https://linkedin.com/in/rnilav]
+- **GitHub:** [https://github.com/rnilav]
 
 ---
 
-**Note:** This is a learning project. Code is educational and may not be optimized for production use.
+**Note:** This is a learning project created for educational purpose. Code in this repo has been developed with the help of AI coding assistant tools and may not be optimized for production use.
