@@ -2,25 +2,19 @@
 
 Clean, minimal implementations of machine learning algorithms built from first principles. 
 
-This repository contains code referenced in my blog series **"From Perceptrons to transformers"** where I document my journey learning AI/ML fundamentals.
+This repository contains code referenced in my blog series **"From Perceptrons to Transformers"** where I document my journey learning AI/ML fundamentals.
 
 ## 📚 Blog Series
 
-Read the full series on (https://dev.to/rnilav/understanding-perceptrons-the-foundation-of-modern-ai-2g04)
+Read the full series on [From perceptrons to transformers](https://dev.to/rnilav/understanding-perceptrons-the-foundation-of-modern-ai-2g04)
 
 ## 📂 What's Inside
 
 Each module contains:
 - **Core implementation** - Clean, documented code
 - **Interactive playground** - Streamlit app for hands-on exploration
-- **Jupyter notebook** - Step-by-step walkthrough with visualizations
 - **README** - Usage guide and key concepts
 
-### Available Modules
-
-1. **[01-perceptron/](01-perceptron/)** - The first artificial neuron
-   
-2. **[02-xor-problem/](02-xor-problem/)** - Coming soon
 
 ## 🚀 Quick Start
 
@@ -36,9 +30,6 @@ pip install -r requirements.txt
 cd 01-perceptron
 streamlit run perceptron_playground.py
 
-# Or explore the notebook
-jupyter notebook 01_perceptron.ipynb
-```
 
 ## 📋 Requirements
 

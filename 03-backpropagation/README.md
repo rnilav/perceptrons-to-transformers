@@ -1,6 +1,6 @@
 # Backpropagation: How Neural Networks Learn
 
-This directory contains the implementation and educational materials for Blog Post 3 in the "From Perceptrons to Transformers" series.
+This directory contains the implementation and educational materials for Blog Post 3 in the [From perceptrons to transformers](https://dev.to/rnilav/understanding-perceptrons-the-foundation-of-modern-ai-2g04) series
 
 ## Overview
 
@@ -179,12 +179,6 @@ After understanding backpropagation:
 - NumPy (numerical computations)
 - Streamlit (for playground, optional)
 - Matplotlib (for visualizations, optional)
-
-## References
-
-- Original MLP implementation: `../02-multi-layer-perceptron/mlp.py`
-- Blog post: `blog-post-backpropagation.md` (coming soon)
-- Design document: `../.kiro/specs/backprop-blog-post/design.md`
 
 ## Educational Notes
 
