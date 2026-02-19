@@ -24,6 +24,11 @@ Backpropagation is the algorithm that enables neural networks to learn automatic
   - Troubleshooting guide
   - Recommended configurations
 
+### Documentation
+- **`BACKPROPAGATION_CALCULUS.md`** - Comprehensive guide to calculus chain rule used in backpropagation
+  - How backpropagation calculates gradients using the chain rule
+  - Why random seed initialization matters and how it interacts with initialization strategies
+
 ### Examples and Exploration
 - **`example_xor_training.py`** - Simple example showing XOR training
   - Quick demonstration of the training process
@@ -177,7 +182,7 @@ After understanding backpropagation:
 2. Read `HYPERPARAMETER_INSIGHTS.md` for deep dive
 3. Run `explore_hyperparameters.py` to build intuition
 4. Experiment with different configurations
-5. Read 'Backprop_calculus_explained.md' for deep dive
+5. Read 'BACKPROPAGATION_CALCULUS.md' for deep dive
 6. Move on to optimization algorithms (SGD, momentum, Adam) - post#4 - coming soon 
 
 ## Dependencies
