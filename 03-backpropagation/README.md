@@ -1,6 +1,6 @@
 # Backpropagation: How Neural Networks Learn
 
-This directory contains the implementation and educational materials for Blog Post 3 in the [From perceptrons to transformers](https://dev.to/rnilav/3-backpropagation-errors-flow-backward-knowledge-flows-forward-5320) series
+This directory contains the implementation and educational materials for Blog Post #3 [Backpropagation: Errors Flow Backward, Knowledge Flows Forward](https://dev.to/rnilav/3-backpropagation-errors-flow-backward-knowledge-flows-forward-5320)
 
 ## Overview
 
