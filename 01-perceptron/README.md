@@ -4,7 +4,7 @@ The perceptron, invented by Frank Rosenblatt in 1958, was the first artificial n
 
 ## 📖 Blog Post
 
-Read the full explanation - [Understanding Perceptrons: The Foundation of Modern AI]:(https://dev.to/rnilav/understanding-perceptrons-the-foundation-of-modern-ai-2g04)
+Read the full explanation - [Understanding Perceptrons: The Foundation of Modern AI](https://dev.to/rnilav/understanding-perceptrons-the-foundation-of-modern-ai-2g04)
 
 ## 🎯 What It Does
 
@@ -14,7 +14,6 @@ The perceptron can learn simple logic gates like AND and OR by adjusting weights
 
 - **`perceptron.py`** - Core implementation with training algorithm
 - **`perceptron_playground.py`** - Interactive Streamlit app
-- **`perceptron.ipynb`** - Jupyter notebook with step-by-step walkthrough
 
 ## 🚀 Quick Start
 
@@ -53,19 +52,6 @@ print(predictions)  # [0, 0, 0, 1]
 accuracy = p.score(X, y)
 print(f"Accuracy: {accuracy:.1%}")  # 100%
 ```
-
-### Explore the Notebook
-
-```bash
-jupyter notebook perceptron.ipynb
-```
-
-The notebook covers:
-- Mathematical foundations
-- Step-by-step implementation
-- Training on logic gates (AND, OR, XOR)
-- Visualization of decision boundaries
-- Understanding convergence and limitations
 
 ## 🧮 How It Works
 
@@ -120,10 +106,6 @@ This limitation led to the development of multilayer perceptrons (MLPs) in the n
 ## 📚 Next Steps
 
 After mastering the perceptron, explore:
-- **[02-xor-problem/](../02-xor-problem/)** - Why XOR fails and how to solve it
+- **[02-multi-layer-perceptron/](../02-multi-layer-perceptron/)** - Why XOR fails and how to solve it
 - The notebook for deeper mathematical insights
 - The playground to build intuition through experimentation
-
-## 🔗 References
-
-1. Nielsen, M. (2015). *Neural Networks and Deep Learning*. Available at: http://neuralnetworksanddeeplearning.com/

@@ -1,6 +1,6 @@
 # Backpropagation: How Neural Networks Learn
 
-This directory contains the implementation and educational materials for Blog Post 3 in the [From perceptrons to transformers](https://dev.to/rnilav/understanding-perceptrons-the-foundation-of-modern-ai-2g04) series
+This directory contains the implementation and educational materials for Blog Post 3 in the [From perceptrons to transformers](https://dev.to/rnilav/series/35847) series
 
 ## Overview
 
@@ -36,11 +36,16 @@ Backpropagation is the algorithm that enables neural networks to learn automatic
   - Provides insights and recommendations
   - Run this to build intuition!
 
-### Interactive Playground (Coming Soon)
+### Interactive Playground
 - **`backprop_playground.py`** - Streamlit app with 2 tabs:
   - Tab 1: Training Visualization (watch XOR learning in real-time)
   - Tab 2: Gradient Flow Visualization (see backpropagation in action)
 
+### Run the Interactive Playground
+
+```bash
+streamlit run perceptron_playground.py
+```
 
 ## Quick Start
 
@@ -168,11 +173,12 @@ Epoch  300: Loss = 0.100
 ## Next Steps
 
 After understanding backpropagation:
-1. Explore the interactive playground (coming soon)
+1. Explore the interactive playground
 2. Read `HYPERPARAMETER_INSIGHTS.md` for deep dive
 3. Run `explore_hyperparameters.py` to build intuition
 4. Experiment with different configurations
-5. Move on to optimization algorithms (SGD, momentum, Adam)
+5. Read 'Backprop_calculus_explained.md' for deep dive
+6. Move on to optimization algorithms (SGD, momentum, Adam) - post#4 - coming soon 
 
 ## Dependencies
 

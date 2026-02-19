@@ -129,7 +129,6 @@ XOR (exclusive-or) is the classic problem that exposed the limitation of single-
 
 After mastering MLPs, explore:
 - **[03-backpropagation/](../03-backpropagation/)** - How networks learn (coming soon)
-- The notebook for deeper mathematical insights
 - The playground to build intuition through experimentation
 - Try modifying the XOR network weights to understand how it works
 
@@ -140,12 +139,5 @@ Before diving into MLPs, make sure you understand:
 - Basic linear algebra (matrix multiplication)
 - Basic calculus concepts (for understanding activation functions)
 
-## 🔗 References
-
-1. **Minsky, M., & Papert, S.** (1969). *Perceptrons: An Introduction to Computational Geometry*. MIT Press.
-
-2. **Nielsen, M.** (2015). *Neural Networks and Deep Learning*. Available at: http://neuralnetworksanddeeplearning.com/
-
----
 
 **Note:** This implementation focuses on understanding MLP architecture and forward pass computation. Training (backpropagation) will be covered in the next module.
