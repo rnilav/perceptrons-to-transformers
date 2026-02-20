@@ -310,15 +310,6 @@ For XOR (only 4 training examples), even 2-8-1 won't overfit. But on larger data
 
 ---
 
-## Further Reading
-
-- **Next topic:** Optimization algorithms (SGD with momentum, Adam) that reduce hyperparameter sensitivity
-- **Next topic:** Batch training vs. single-example training
-- **Next topic:** Learning rate schedules (start high, decrease over time)
-- **Next topic:** Advanced initialization schemes (Xavier, He)
-
----
-
 ## Quick Reference
 
 ```python

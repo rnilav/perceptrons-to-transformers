@@ -212,7 +212,7 @@ with col1:
     
     # Plot decision boundary
     fig = plot_decision_boundary(X, y, model, f"{dataset_choice} Function")
-    st.plotly_chart(fig, use_container_width=True)
+    st.plotly_chart(fig, width='content')
     
     # Training progress
     params = model.get_params()
@@ -236,7 +236,7 @@ with col1:
         height=300
     )
     
-    st.plotly_chart(fig_errors, use_container_width=True)
+    st.plotly_chart(fig_errors, width='content')
 
 with col2:
     st.subheader("📈 Metrics")
