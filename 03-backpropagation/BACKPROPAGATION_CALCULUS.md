@@ -492,7 +492,7 @@ W = np.random.randn(n_in, n_out) * 0.1
 - **Problem**: Same scale (0.1) regardless of layer size
 - **Issue**: Deep networks suffer from vanishing/exploding gradients
 
-### Xavier/Glorot Initialization (WHAT YOU USE)
+### Xavier/Glorot Initialization (WHAT I'VE USED IN THIS CODE)
 ```python
 scale = np.sqrt(2.0 / (n_in + n_out))
 W = np.random.randn(n_in, n_out) * scale
@@ -574,14 +574,14 @@ With 4 hidden neurons instead of 2:
 
 ## Practical Recommendations
 
-### For Learning/Teaching (Your Blog Post)
+### For Learning/Teaching
 - **Use fixed seeds** (123, 42, 789) to demonstrate specific behaviors
 - Show how seed 42 gets stuck at 75%
 - Show how seed 123 reaches 100%
 - Teach that initialization matters!
 
 ### For Production/Research
-- **Use Xavier/He initialization** (you already do this!)
+- **Use Xavier/He initialization**
 - **Train multiple times** with different random seeds
 - **Pick the best model** or ensemble them
 - **Use larger architectures** for robustness
