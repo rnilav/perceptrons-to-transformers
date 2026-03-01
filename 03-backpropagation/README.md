@@ -1,10 +1,9 @@
 # Backpropagation: How Neural Networks Learn
 
-This directory contains the implementation and educational materials for Blog Post #3 [Backpropagation: Errors Flow Backward, Knowledge Flows Forward](https://dev.to/rnilav/3-backpropagation-errors-flow-backward-knowledge-flows-forward-5320)
-
-## Overview
-
 Backpropagation is the algorithm that enables neural networks to learn automatically by computing gradients and updating weights through gradient descent. This implementation demonstrates the complete training process on the XOR problem.
+
+# Blog Post
+Read the blog - [Backpropagation: Errors Flow Backward, Knowledge Flows Forward](https://dev.to/rnilav/3-backpropagation-errors-flow-backward-knowledge-flows-forward-5320)
 
 ## Files
 
@@ -30,11 +29,6 @@ Backpropagation is the algorithm that enables neural networks to learn automatic
   - Why random seed initialization matters and how it interacts with initialization strategies
 
 ### Examples and Exploration
-- **`example_xor_training.py`** - Simple example showing XOR training
-  - Quick demonstration of the training process
-  - Shows loss reduction and final predictions
-  - Good starting point for beginners
-
 - **`explore_hyperparameters.py`** - Interactive exploration script
   - 4 experiments demonstrating hyperparameter effects
   - Compares different configurations side-by-side
@@ -49,26 +43,19 @@ Backpropagation is the algorithm that enables neural networks to learn automatic
 ### Run the Interactive Playground
 
 ```bash
-streamlit run perceptron_playground.py
+streamlit run backprop_playground.py
 ```
 
 ## Quick Start
 
-### 1. Basic Training Example
-```bash
-python example_xor_training.py
-```
-
-This shows a simple training run with recommended settings.
-
-### 2. Explore Hyperparameters
+### 1. Explore Hyperparameters
 ```bash
 python explore_hyperparameters.py
 ```
 
-This runs 4 experiments showing how different hyperparameters affect training. Great for building intuition!
+This runs 4 experiments showing how different hyperparameters affect training.
 
-### 3. Use in Your Code
+### 2. Use in Your Code
 ```python
 from backprop import TrainableMLP
 import numpy as np
@@ -183,7 +170,7 @@ After understanding backpropagation:
 3. Run `explore_hyperparameters.py` to build intuition
 4. Experiment with different configurations
 5. Read 'BACKPROPAGATION_CALCULUS.md' for deep dive
-6. Move on to optimization algorithms (SGD, momentum, Adam) - post#4 - coming soon 
+6. Move on to optimization algorithms (SGD, momentum, Adam) - [**Module#4**](https://github.com/rnilav/perceptrons-to-transformers/tree/main/04-optimization)
 
 ## Dependencies
 
@@ -195,6 +182,5 @@ After understanding backpropagation:
 
 This implementation prioritizes clarity and understanding over performance:
 - Uses NumPy only (no ML frameworks)
-- Includes detailed comments and docstrings
 - Demonstrates concepts with minimal code
 - Focuses on the XOR problem for simplicity

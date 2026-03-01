@@ -18,29 +18,12 @@ class Perceptron:
     to converge if the data is linearly separable.
     
     Attributes:
-        learning_rate: Step size for weight updates (α)
+        learning_rate: Step size for weight updates
         n_iterations: Maximum number of training epochs
         random_state: Seed for random number generator
         weights_: Learned weight vector (shape: n_features + 1)
                   First element is bias, rest are feature weights
         errors_: Number of misclassifications in each epoch
-        
-    Mathematical Formulation:
-        ŷ = σ(w^T x + b)
-        
-        where σ is the step function:
-        σ(z) = 1 if z ≥ 0, else 0
-        
-    Example:
-        >>> from perceptron import Perceptron
-        >>> import numpy as np
-        >>> X = np.array([[0, 0], [0, 1], [1, 0], [1, 1]])
-        >>> y = np.array([0, 0, 0, 1])  # AND function
-        >>> model = Perceptron(learning_rate=0.1, n_iterations=10)
-        >>> model.fit(X, y)
-        >>> predictions = model.predict(X)
-        >>> print(predictions)
-        [0 0 0 1]
     """
     
     def __init__(
@@ -53,7 +36,7 @@ class Perceptron:
         Initialize the perceptron.
         
         Args:
-            learning_rate: Learning rate α for weight updates (0 < α ≤ 1)
+            learning_rate: Learning rate for weight updates
             n_iterations: Maximum number of training epochs
             random_state: Random seed for reproducibility
         """
@@ -66,9 +49,6 @@ class Perceptron:
     def fit(self, X: np.ndarray, y: np.ndarray) -> 'Perceptron':
         """
         Train the perceptron on training data.
-        
-        Uses the perceptron learning rule:
-        w ← w + α * (y - ŷ) * x
         
         Args:
             X: Training features of shape (n_samples, n_features)
@@ -141,9 +121,6 @@ class Perceptron:
         Returns:
             Net input z = w^T x + b of shape (n_samples,)
             
-        Mathematical Formulation:
-            z = w₁x₁ + w₂x₂ + ... + wₙxₙ + b
-              = w^T x + b
         """
         # weights_[0] is bias, weights_[1:] are feature weights
         return np.dot(X, self.weights_[1:]) + self.weights_[0]
@@ -161,9 +138,6 @@ class Perceptron:
         Raises:
             ValueError: If model hasn't been trained yet
             ValueError: If X has wrong number of features
-            
-        Mathematical Formulation:
-            ŷ = σ(z) where σ(z) = 1 if z ≥ 0, else 0
         """
         if self.weights_ is None:
             raise ValueError(
@@ -195,12 +169,8 @@ class Perceptron:
             
         Returns:
             Accuracy score between 0 and 1
-            
-        Example:
-            >>> accuracy = model.score(X_test, y_test)
-            >>> print(f"Accuracy: {accuracy:.2%}")
-            Accuracy: 95.00%
         """
+
         predictions = self.predict(X)
         return np.mean(predictions == y)
     

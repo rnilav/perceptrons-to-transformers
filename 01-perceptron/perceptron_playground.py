@@ -29,7 +29,7 @@ st.sidebar.header("⚙️ Configuration")
 
 # Learning parameters
 learning_rate = st.sidebar.slider(
-    "Learning Rate (α)",
+    "Learning Rate",
     min_value=0.001,
     max_value=1.0,
     value=0.1,

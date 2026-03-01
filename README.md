@@ -2,15 +2,20 @@
 
 Clean, minimal implementations of machine learning algorithms built from first principles. 
 
-This repository contains code referenced in my blog series **"From Perceptrons to Transformers"** where I document my journey learning AI/ML fundamentals.
-
-## 📚 Blog Series
-
-Read the full series on [From perceptrons to transformers](https://dev.to/rnilav/understanding-perceptrons-the-foundation-of-modern-ai-2g04)
+This repository contains code referenced in my blog series [**"From Perceptrons to Transformers"**]((https://dev.to/rnilav/understanding-perceptrons-the-foundation-of-modern-ai-2g04)) where I document my journey learning AI/ML fundamentals.
 
 ## 📂 What's Inside
 
+## 📂 Available Modules
+
+1. [01-perceptron](https://github.com/rnilav/perceptrons-to-transformers/tree/main/01-perceptron)
+2. [02-multi-layer-perceptron](https://github.com/rnilav/perceptrons-to-transformers/tree/main/02-multi-layer-perceptron)
+3. [03-backpropagation](https://github.com/rnilav/perceptrons-to-transformers/tree/main/03-backpropagation)
+4. [04-optimization](https://github.com/rnilav/perceptrons-to-transformers/tree/main/04-optimization)
+5. Coming soon
+
 Each module contains:
+
 - **Core implementation** - Clean, documented code
 - **Interactive playground** - Streamlit app for hands-on exploration
 - **README** - Usage guide and key concepts
@@ -26,7 +31,8 @@ cd perceptrons-to-transformers
 # Install dependencies
 pip install -r requirements.txt
 
-# Run the perceptron playground
+# Run the cd to each module and run the respective playground
+e.g.
 cd 01-perceptron
 streamlit run perceptron_playground.py
 
@@ -38,7 +44,6 @@ streamlit run perceptron_playground.py
 - Matplotlib (plotting)
 - Plotly (interactive visualizations)
 - Streamlit (interactive apps)
-- Jupyter (notebooks)
 
 ## 🎯 Learning Philosophy
 
@@ -58,10 +63,9 @@ MIT License - Feel free to use this code for learning.
 
 ## 🔗 Connect
 
-- **Dev.to:** [https://dev.to/rnilav]
-- **LinkedIn:** [https://linkedin.com/in/rnilav]
-- **GitHub:** [https://github.com/rnilav]
+- [**Dev.to:**](https://dev.to/rnilav)
+- [**LinkedIn:**](https://linkedin.com/in/rnilav)
+- [**GitHub:**](https://github.com/rnilav)
 
----
 
 **Note:** This is a learning project created for educational purpose. Code in this repo has been developed with the help of AI coding assistant tools and may not be optimized for production use.

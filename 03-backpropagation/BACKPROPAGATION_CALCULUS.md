@@ -618,11 +618,3 @@ Successful training requires:
 4. ✅ Appropriate learning rate
 
 All four work together to help the network find the global minimum!
-
----
-
-## References for Further Reading
-
-- **Backpropagation**: Rumelhart, Hinton, Williams (1986) - "Learning representations by back-propagating errors"
-- **Xavier Initialization**: Glorot & Bengio (2010) - "Understanding the difficulty of training deep feedforward neural networks"
-- **He Initialization**: He et al. (2015) - "Delving Deep into Rectifiers: Surpassing Human-Level Performance on ImageNet Classification"

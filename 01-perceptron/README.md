@@ -8,7 +8,7 @@ Read the full explanation - [Understanding Perceptrons: The Foundation of Modern
 
 ## 🎯 What It Does
 
-The perceptron can learn simple logic gates like AND and OR by adjusting weights based on training examples. However, it cannot learn XOR - a limitation that held back neural networks for decades.
+The perceptron can learn simple logic gates like AND, OR & NAND by adjusting weights based on training examples. However, it cannot learn XOR - a limitation that held back neural networks for decades.
 
 ## 📁 Files
 
@@ -97,7 +97,7 @@ This limitation led to the development of multilayer perceptrons (MLPs) in the n
 
 ## 🎓 What You'll Learn
 
-1. How neural networks learn from examples
+1. How perceptron learn from examples
 2. The role of weights and biases
 3. Why linear separability matters
 4. The XOR problem and its historical significance
@@ -106,6 +106,7 @@ This limitation led to the development of multilayer perceptrons (MLPs) in the n
 ## 📚 Next Steps
 
 After mastering the perceptron, explore:
-- **[02-multi-layer-perceptron/](../02-multi-layer-perceptron/)** - Why XOR fails and how to solve it
+- [**02-multi-layer-perceptron**](https://github.com/rnilav/perceptrons-to-transformers/tree/main/02-multi-layer-perceptron)
+- Why XOR fails and how to solve it
 - The notebook for deeper mathematical insights
 - The playground to build intuition through experimentation
