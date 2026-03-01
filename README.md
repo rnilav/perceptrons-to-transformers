@@ -61,11 +61,4 @@ Found a bug or have a suggestion? Open an issue or submit a pull request!
 
 MIT License - Feel free to use this code for learning.
 
-## 🔗 Connect
-
-- [Dev.to](https://dev.to/rnilav)
-- [LinkedIn](https://linkedin.com/in/rnilav)
-- [GitHub](https://github.com/rnilav)
-
-
 **Note** This is a learning project created for educational purpose. Code in this repo has been developed with the help of AI coding assistant tools and may not be optimized for production use.
