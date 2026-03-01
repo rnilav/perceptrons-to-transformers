@@ -2,7 +2,7 @@
 
 Clean, minimal implementations of machine learning algorithms built from first principles. 
 
-This repository contains code referenced in my blog series [**"From Perceptrons to Transformers"**]((https://dev.to/rnilav/understanding-perceptrons-the-foundation-of-modern-ai-2g04)) where I document my journey learning AI/ML fundamentals.
+This repository contains code referenced in my blog series [From Perceptrons to Transformers]((https://dev.to/rnilav/understanding-perceptrons-the-foundation-of-modern-ai-2g04)) where I document my journey learning AI/ML fundamentals.
 
 ## 📂 What's Inside
 
@@ -47,7 +47,7 @@ streamlit run perceptron_playground.py
 
 ## 🎯 Learning Philosophy
 
-This repository follows a **first principles approach**:
+This repository follows a first principles approach:
 - Build everything from scratch (no ML frameworks)
 - Understand the math and intuition
 - See working code with real examples
@@ -63,9 +63,9 @@ MIT License - Feel free to use this code for learning.
 
 ## 🔗 Connect
 
-- [**Dev.to:**](https://dev.to/rnilav)
-- [**LinkedIn:**](https://linkedin.com/in/rnilav)
-- [**GitHub:**](https://github.com/rnilav)
+- [Dev.to](https://dev.to/rnilav)
+- [LinkedIn](https://linkedin.com/in/rnilav)
+- [GitHub](https://github.com/rnilav)
 
 
-**Note:** This is a learning project created for educational purpose. Code in this repo has been developed with the help of AI coding assistant tools and may not be optimized for production use.
+**Note** This is a learning project created for educational purpose. Code in this repo has been developed with the help of AI coding assistant tools and may not be optimized for production use.

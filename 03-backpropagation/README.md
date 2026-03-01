@@ -103,7 +103,7 @@ TrainableMLP(
 )
 epochs = 3000
 ```
-**Why:** Robust, fast convergence, works with most seeds
+**Why** Robust, fast convergence, works with most seeds
 
 ## Key Concepts Demonstrated
 
@@ -170,7 +170,7 @@ After understanding backpropagation:
 3. Run `explore_hyperparameters.py` to build intuition
 4. Experiment with different configurations
 5. Read 'BACKPROPAGATION_CALCULUS.md' for deep dive
-6. Move on to optimization algorithms (SGD, momentum, Adam) - [**Module#4**](https://github.com/rnilav/perceptrons-to-transformers/tree/main/04-optimization)
+6. Move on to optimization algorithms (SGD, momentum, Adam) - [Module#4](https://github.com/rnilav/perceptrons-to-transformers/tree/main/04-optimization)
 
 ## Dependencies
 

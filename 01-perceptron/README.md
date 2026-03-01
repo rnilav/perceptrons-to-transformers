@@ -106,7 +106,7 @@ This limitation led to the development of multilayer perceptrons (MLPs) in the n
 ## 📚 Next Steps
 
 After mastering the perceptron, explore:
-- [**02-multi-layer-perceptron**](https://github.com/rnilav/perceptrons-to-transformers/tree/main/02-multi-layer-perceptron)
+- [02-multi-layer-perceptron](https://github.com/rnilav/perceptrons-to-transformers/tree/main/02-multi-layer-perceptron)
 - Why XOR fails and how to solve it
 - The notebook for deeper mathematical insights
 - The playground to build intuition through experimentation

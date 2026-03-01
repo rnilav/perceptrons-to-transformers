@@ -129,7 +129,7 @@ XOR (exclusive-or) is the classic problem that exposed the limitation of single-
 
 After mastering MLPs, explore:
 
-- [**03-backpropagation**](https://github.com/rnilav/perceptrons-to-transformers/tree/main/03-backpropagation)- How networks learn
+- [03-backpropagation](https://github.com/rnilav/perceptrons-to-transformers/tree/main/03-backpropagation)- How networks learn
 - The playground to build intuition through experimentation
 - Try modifying the XOR network weights to understand how it works
 
@@ -137,9 +137,9 @@ After mastering MLPs, explore:
 
 Before diving into MLPs, make sure you understand:
 
-- [**01-perceptron**](https://github.com/rnilav/perceptrons-to-transformers/tree/main/01-perceptron) 
+- [01-perceptron](https://github.com/rnilav/perceptrons-to-transformers/tree/main/01-perceptron) 
 - Single-layer perceptrons and their limitations
 - Basic linear algebra (matrix multiplication)
 - Basic calculus concepts (for understanding activation functions)
 
-**Note:** This implementation focuses on understanding MLP architecture and forward pass computation. Training (backpropagation) will be covered in the next module.
+**Note** This implementation focuses on understanding MLP architecture and forward pass computation. Training (backpropagation) will be covered in the next module.
