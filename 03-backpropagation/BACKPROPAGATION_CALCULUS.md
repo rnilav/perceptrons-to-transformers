@@ -336,7 +336,7 @@ The error literally **propagates backward** through the network, multiplied by w
 
 ## Code Mapping
 
-Here's how the math maps to your implementation:
+Here's how the math maps to our implementation:
 
 ```python
 def _backward(self, X, y, layer_activations, pre_activations):
@@ -483,7 +483,7 @@ If you don't set a seed (`random_state=None`), each training run uses different 
 
 ## Initialization Strategies: Xavier vs He vs Simple
 
-Your implementation uses Xavier initialization. Let's understand the difference:
+Our implementation uses Xavier initialization. Let's understand the difference:
 
 ### Simple Random Initialization (NOT recommended)
 ```python
@@ -550,12 +550,6 @@ Even with Xavier initialization:
 - Those specific values can still create symmetry or poor gradient directions
 - Xavier improves the **average case** but doesn't guarantee every initialization is good
 
-**Analogy**:
-- **Without Xavier**: Seed 42 starts you in a bad neighborhood with the wrong map scale
-- **With Xavier**: Seed 42 starts you in a bad neighborhood but at least the map scale is correct
-
-You're more likely to succeed, but you can still get unlucky!
-
 ---
 
 ## Why 2-4-1 Architecture Is More Robust
@@ -569,27 +563,6 @@ With 4 hidden neurons instead of 2:
 **Success rates**:
 - 2-2-1 with random seed: ~60-70% success
 - 2-4-1 with random seed: ~90-95% success
-
----
-
-## Practical Recommendations
-
-### For Learning/Teaching
-- **Use fixed seeds** (123, 42, 789) to demonstrate specific behaviors
-- Show how seed 42 gets stuck at 75%
-- Show how seed 123 reaches 100%
-- Teach that initialization matters!
-
-### For Production/Research
-- **Use Xavier/He initialization**
-- **Train multiple times** with different random seeds
-- **Pick the best model** or ensemble them
-- **Use larger architectures** for robustness
-
-### For Reproducibility
-- **Always set a seed** when you need reproducible results
-- Document the seed in your code/papers
-- Use the same seed for fair comparisons
 
 ---
 
