@@ -2,6 +2,58 @@
 
 This directory contains the code and interactive playground for the fourth blog post in the "Perceptrons to Transformers" series, focusing on the transition from small-scale learning to large-scale learning with MNIST, introducing stochastic gradient descent, mini-batches, and modern optimizers (Momentum and Adam).
 
+## 📖 Blog Post
+
+Read the full explanation - [Neural Network Optimizers: From Baby Steps to Intelligent Learning](https://dev.to/rnilav/neural-network-optimizers-from-baby-steps-to-intelligent-learning-44po)
+
+## Code Organization
+
+### Core Implementation Files
+
+- **`optimizers.py`** - Optimizer implementations
+  - `Optimizer` - Base class with common interface
+  - `SGD` - Stochastic gradient descent (mini-batch)
+  - `MomentumSGD` - SGD with momentum for smoother convergence
+  - `Adam` - Adaptive moment estimation optimizer
+
+- **`mnist_trainer.py`** - Neural network and training infrastructure
+  - `load_mnist()` - Load and preprocess MNIST dataset
+  - `Network` - Neural network class (784 → 128 → 10)
+    - Forward propagation with ReLU and softmax
+    - Backward propagation for gradient computation
+    - Loss computation and accuracy evaluation
+  - `Trainer` - Training loop with mini-batch support
+    - Epoch-based training with shuffling
+    - Metrics tracking (loss and accuracy)
+    - Integration with any optimizer
+
+- **`optimization_playground.py`** - Interactive Streamlit application
+  - Optimizer Comparison
+    - Side-by-side training with multiple optimizers
+    - Real-time loss and accuracy visualization
+    - Performance comparison and sample predictions
+
+## Features
+
+- **From-scratch implementations**: All optimizers built using only NumPy
+- **Interactive comparison**: Side-by-side optimizer performance on real MNIST data
+
+## Learning Objectives
+
+1. Understand why full-batch gradient descent doesn't scale to large datasets
+2. Grasp the concepts of mini-batches, epochs, and stochastic updates
+3. Recognize the problems with vanilla SGD (noise, oscillation, sensitivity)
+4. Develop intuition for how Momentum and Adam improve convergence
+5. Experience the practical differences through interactive visualization
+
+## Usage Tips
+
+### Playground Recommendations
+
+- **Start with default settings**: Use Adam optimizer with learning rate 0.01, batch size 64, and 5 epochs
+- **Compare optimizers**: Select multiple optimizers to see performance differences side-by-side
+- **Experiment with hyperparameters**: Try different learning rates and batch sizes to see their effects
+
 ## Setup Instructions
 
 ### Prerequisites
@@ -40,13 +92,6 @@ This will open a browser window with the interactive playground where you can:
 - Visualize training accuracy curves in real-time
 - See performance comparisons and sample predictions
 
-#### Run with Verbose Output
-
-For detailed test output:
-
-```bash
-pytest -v
-```
 
 ### Training a Model Manually
 
@@ -76,60 +121,6 @@ test_accuracy = network.accuracy(X_test, y_test)
 print(f"Final test accuracy: {test_accuracy:.4f}")
 ```
 
-## Code Organization
-
-### Core Implementation Files
-
-- **`optimizers.py`** - Optimizer implementations
-  - `Optimizer` - Base class with common interface
-  - `SGD` - Stochastic gradient descent (mini-batch)
-  - `MomentumSGD` - SGD with momentum for smoother convergence
-  - `Adam` - Adaptive moment estimation optimizer
-
-- **`mnist_trainer.py`** - Neural network and training infrastructure
-  - `load_mnist()` - Load and preprocess MNIST dataset
-  - `Network` - Neural network class (784 → 128 → 10)
-    - Forward propagation with ReLU and softmax
-    - Backward propagation for gradient computation
-    - Loss computation and accuracy evaluation
-  - `Trainer` - Training loop with mini-batch support
-    - Epoch-based training with shuffling
-    - Metrics tracking (loss and accuracy)
-    - Integration with any optimizer
-
-- **`optimization_playground.py`** - Interactive Streamlit application
-  - Optimizer Comparison
-    - Side-by-side training with multiple optimizers
-    - Real-time loss and accuracy visualization
-    - Performance comparison and sample predictions
-
-### Supporting Files
-
-- **`requirements.txt`** - Python dependencies
-- **`README.md`** - This documentation file
-
-## Features
-
-- **From-scratch implementations**: All optimizers built using only NumPy
-- **Interactive comparison**: Side-by-side optimizer performance on real MNIST data
-
-## Learning Objectives
-
-1. Understand why full-batch gradient descent doesn't scale to large datasets
-2. Grasp the concepts of mini-batches, epochs, and stochastic updates
-3. Recognize the problems with vanilla SGD (noise, oscillation, sensitivity)
-4. Develop intuition for how Momentum and Adam improve convergence
-5. Experience the practical differences through interactive visualization
-
-## Usage Tips
-
-### Playground Recommendations
-
-- **Start with default settings**: Use Adam optimizer with learning rate 0.01, batch size 64, and 5 epochs
-- **Compare optimizers**: Select multiple optimizers to see performance differences side-by-side
-- **Experiment with hyperparameters**: Try different learning rates and batch sizes to see their effects
-
-
 ## Troubleshooting
 
 ### Common Issues
@@ -152,7 +143,7 @@ This is the fourth post in the "Perceptrons to Transformers" series:
 1. **Post 1**: [Perceptron: The Foundation of Modern AI](https://dev.to/rnilav/understanding-perceptrons-the-foundation-of-modern-ai-2g04)
 2. **Post 2**: [Multi Layer Perceptron: From Lines to Curves - The Hidden Layer](https://dev.to/rnilav/understanding-ai-from-first-principles-multi-layer-perceptrons-and-the-hidden-layer-breakthrough-44pl)
 3. **Post 3**: [Backpropagation: Errors Flow Backward, Knowledge Flows Forward](https://dev.to/rnilav/3-backpropagation-errors-flow-backward-knowledge-flows-forward-5320)
-4. **Post 4**: [Neural Network Optimizers: From Baby Steps to Intelligent Learning](TBU)
+4. **Post 4**: [Neural Network Optimizers: From Baby Steps to Intelligent Learning](https://dev.to/rnilav/neural-network-optimizers-from-baby-steps-to-intelligent-learning-44po)
 
 
 ## License
