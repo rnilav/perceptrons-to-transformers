@@ -2,7 +2,10 @@
 
 This directory contains the implementation for the fifth blog post in the "Perceptrons to Transformers" series, focusing on overfitting and regularization techniques.
 
-## Overview
+
+📖 Blog Post
+
+Read the full explanation - [Regularization: Fighting Overfitting](https://dev.to/rnilav/regularization-fighting-overfitting-2pj)
 
 This blog post demonstrates why neural networks overfit (memorize training data instead of learning generalizable patterns) and introduces two key regularization techniques:
 
@@ -23,7 +26,7 @@ The interactive playground lets you experiment with these techniques in real-tim
 Navigate to this directory and install required packages:
 
 ```bash
-cd blogpost-perceptrons-to-transformers/05-regularization
+cd perceptrons-to-transformers/05-regularization
 pip install -r requirements.txt
 ```
 
@@ -157,10 +160,3 @@ Ensure all dependencies are installed:
 ```bash
 pip install -r requirements.txt --upgrade
 ```
-
-## Performance Notes
-
-- Training 10 epochs on MNIST typically takes 2-5 seconds
-- Playground is responsive for real-time parameter adjustment
-- Weight distribution analysis takes ~30 seconds for 4 configurations
-- All computations use NumPy
