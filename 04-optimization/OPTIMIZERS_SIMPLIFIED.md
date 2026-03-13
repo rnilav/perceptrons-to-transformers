@@ -140,12 +140,12 @@ Choose your optimizer like you'd choose a study strategy—match it to the probl
 
 ---
 
-## What's Next?
+    ## What's Next?
 
-There are many more optimizers in the wild: **AdaGrad** (adapts per-parameter but burns out on long training runs), **RMSProp** (fixes AdaGrad's aggressive decay), **AdaDelta** (removes the need for a learning rate), **NAdam** (Nesterov-accelerated Adam), **L-BFGS** (second-order method for smaller datasets), and newer variants like **AdamW** (Adam with weight decay done right), **RAdam** (rectified Adam with warmup), and **Lookahead** (maintains fast and slow weights).
+    There are many more optimizers in the wild: **AdaGrad** (adapts per-parameter but burns out on long training runs), **RMSProp** (fixes AdaGrad's aggressive decay), **AdaDelta** (removes the need for a learning rate), **NAdam** (Nesterov-accelerated Adam), **L-BFGS** (second-order method for smaller datasets), and newer variants like **AdamW** (Adam with weight decay done right), **RAdam** (rectified Adam with warmup), and **Lookahead** (maintains fast and slow weights).
 
-Each optimizer is a different learning strategy—a different way to navigate the loss landscape. I'll cover these in future posts when the context is right, showing you not just *what* they do, but *when* and *why* to use them.
+    Each optimizer is a different learning strategy—a different way to navigate the loss landscape. I'll cover these in future posts when the context is right, showing you not just *what* they do, but *when* and *why* to use them.
 
-For now, you have the foundation: SGD grinds through problems with stubborn consistency, Momentum surges forward with accumulated confidence, and Adam adapts intelligently to each parameter's needs.
+    For now, you have the foundation: SGD grinds through problems with stubborn consistency, Momentum surges forward with accumulated confidence, and Adam adapts intelligently to each parameter's needs.
 
-Pick your learner. Start training.
+    Pick your learner. Start training.
