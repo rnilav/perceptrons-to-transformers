@@ -12,7 +12,8 @@ This repository contains code referenced in my blog series [From Perceptrons to 
 2. [02-multi-layer-perceptron](https://github.com/rnilav/perceptrons-to-transformers/tree/main/02-multi-layer-perceptron)
 3. [03-backpropagation](https://github.com/rnilav/perceptrons-to-transformers/tree/main/03-backpropagation)
 4. [04-optimization](https://github.com/rnilav/perceptrons-to-transformers/tree/main/04-optimization)
-5. Coming soon
+5. [05-regularization](https://github.com/rnilav/perceptrons-to-transformers/tree/main/05-regularization)
+5. [06-cnn](https://github.com/rnilav/perceptrons-to-transformers/tree/main/06-cnn)
 
 Each module contains:
 
