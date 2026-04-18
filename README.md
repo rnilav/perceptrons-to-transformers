@@ -13,7 +13,9 @@ This repository contains code referenced in my blog series [From Perceptrons to 
 3. [03-backpropagation](https://github.com/rnilav/perceptrons-to-transformers/tree/main/03-backpropagation)
 4. [04-optimization](https://github.com/rnilav/perceptrons-to-transformers/tree/main/04-optimization)
 5. [05-regularization](https://github.com/rnilav/perceptrons-to-transformers/tree/main/05-regularization)
-5. [06-cnn](https://github.com/rnilav/perceptrons-to-transformers/tree/main/06-cnn)
+6. [06-cnn](https://github.com/rnilav/perceptrons-to-transformers/tree/main/06-cnn)
+7. [07-batch-norm-resnet](https://github.com/rnilav/perceptrons-to-transformers/tree/main/07-batch-norm-resnet)
+8. [08-rnn](https://github.com/rnilav/perceptrons-to-transformers/tree/main/08-rnn)
 
 Each module contains:
 
@@ -26,7 +28,7 @@ Each module contains:
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/perceptrons-to-transformers.git
+git clone https://github.com/rnilav/perceptrons-to-transformers.git
 cd perceptrons-to-transformers
 
 # Install dependencies
