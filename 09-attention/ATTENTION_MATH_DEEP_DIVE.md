@@ -1,6 +1,6 @@
 # Attention Mechanisms: Mathematical Deep Dive
 
-A companion to [Blog Post #9: Attention Mechanisms](blog-post-attention-v2.md).
+A companion to [Blog Post #9: Attention Mechanisms](https://dev.to/rnilav/attention-mechanisms-stop-compressing-start-looking-back-1bol).
 
 This document covers the full mathematical treatment of every concept introduced in the blog post — dot-product attention, scaled dot-product attention, the Query/Key/Value framework, self-attention, and multi-head attention. Each section includes variable definitions, step-by-step derivations, worked numerical examples, and tuning guidance.
 
