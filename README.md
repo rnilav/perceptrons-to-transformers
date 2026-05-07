@@ -16,12 +16,8 @@ This repository contains code referenced in my blog series [From Perceptrons to 
 6. [06-cnn](https://github.com/rnilav/perceptrons-to-transformers/tree/main/06-cnn)
 7. [07-batch-norm-resnet](https://github.com/rnilav/perceptrons-to-transformers/tree/main/07-batch-norm-resnet)
 8. [08-rnn](https://github.com/rnilav/perceptrons-to-transformers/tree/main/08-rnn)
-
-Each module contains:
-
-- **Core implementation** - Clean, documented code
-- **Interactive playground** - Streamlit app for hands-on exploration
-- **README** - Usage guide and key concepts
+9. [09-attention](https://github.com/rnilav/perceptrons-to-transformers/tree/main/09-attention)
+10. [10-transformer](https://github.com/rnilav/perceptrons-to-transformers/tree/main/10-transformer)
 
 
 ## 🚀 Quick Start
