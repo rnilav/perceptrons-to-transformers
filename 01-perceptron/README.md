@@ -1,7 +1,5 @@
 # Perceptron - The First Artificial Neuron
 
-The perceptron, invented by Frank Rosenblatt in 1958, was the first artificial neuron that could learn from examples. It's a binary classifier that learns to separate data using a linear decision boundary.
-
 ## 📖 Blog Post
 
 Read the full explanation - [Understanding Perceptrons: The Foundation of Modern AI](https://dev.to/rnilav/understanding-perceptrons-the-foundation-of-modern-ai-2g04)
