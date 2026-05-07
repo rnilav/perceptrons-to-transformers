@@ -167,7 +167,7 @@ Input: "To be or not to b"
 | Layers | 2 | 4 |
 | Heads | 2 | 4 |
 | Context | 64 chars | 128 chars |
-| Training time | ~2 min | ~5 min |
+| Training time | ~10 min | ~50 min |
 | Final loss | ~1.8 | ~1.5 |
 | Output quality | Rough structure | Recognizable Shakespeare |
 
