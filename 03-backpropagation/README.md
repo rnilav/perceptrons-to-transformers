@@ -5,15 +5,6 @@ Backpropagation is the algorithm that enables neural networks to learn automatic
 # Blog Post
 Read the blog - [Backpropagation: Errors Flow Backward, Knowledge Flows Forward](https://dev.to/rnilav/3-backpropagation-errors-flow-backward-knowledge-flows-forward-5320)
 
-## Files
-
-### Core Implementation
-- **`backprop.py`** - Main implementation with `TrainableMLP` class
-  - Extends the MLP class from Post 2 with training capabilities
-  - Implements backpropagation algorithm for gradient computation
-  - Implements gradient descent for weight updates
-  - Includes activation derivative functions
-
 ### Documentation
 - **`HYPERPARAMETER_INSIGHTS.md`** - Comprehensive guide to hyperparameter effects
   - Learning rate selection and effects
@@ -104,25 +95,6 @@ TrainableMLP(
 epochs = 3000
 ```
 **Why** Robust, fast convergence, works with most seeds
-
-## Key Concepts Demonstrated
-
-1. **Backpropagation Algorithm**
-   - Forward pass: Compute predictions
-   - Loss computation: Measure error (MSE)
-   - Backward pass: Compute gradients using chain rule
-   - Weight update: Apply gradient descent
-
-2. **Gradient Descent**
-   - Formula: `w_new = w_old - learning_rate * gradient`
-   - Iteratively minimizes loss function
-   - Learning rate controls step size
-
-3. **Hyperparameter Effects**
-   - Learning rate: Speed vs. stability tradeoff
-   - Architecture: Capacity vs. complexity tradeoff
-   - Random seed: Initialization matters
-   - Epochs: When to stop training
 
 ## Understanding the Loss Curve
 
