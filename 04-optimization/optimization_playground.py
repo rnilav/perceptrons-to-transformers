@@ -42,6 +42,12 @@ with col1:
     learning_rate = st.slider("Learning Rate", 0.001, 0.1, 0.01, 0.001)
     batch_size = st.selectbox("Batch Size", [16, 32, 64, 128], index=2)
     epochs = st.number_input("Epochs", min_value=1, max_value=50, value=5)
+    sample_size = st.select_slider(
+        "Training samples",
+        options=[1000, 2000, 5000, 10000, 20000, 60000],
+        value=5000,
+        help="Fewer samples = faster training. The optimizer comparison is clear even at 5,000 samples."
+    )
     
     # Train button
     train_button = st.button("🚀 Train Networks", type="primary")
@@ -63,6 +69,11 @@ with col2:
         else:
             results = {}
             
+            # Slice training data to selected sample size
+            X_tr = X_train[:sample_size]
+            y_tr = y_train[:sample_size]
+            y_tr_oh = y_train_onehot[:sample_size]
+            
             # Progress tracking
             progress_bar = st.progress(0)
             status_text = st.empty()
@@ -78,7 +89,7 @@ with col2:
                 # Track training time
                 start_time = time.time()
                 history = trainer.train(
-                    X_train, y_train_onehot, y_train,
+                    X_tr, y_tr_oh, y_tr,
                     X_test, y_test_onehot, y_test,
                     epochs=int(epochs), batch_size=batch_size, verbose=False
                 )
