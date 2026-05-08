@@ -4,8 +4,11 @@ import numpy as np
 
 
 def load_mnist():
-    """Load MNIST dataset using keras datasets (for convenience).
-    
+    """Load MNIST dataset via direct download (no ML framework dependency).
+
+    Downloads the raw IDX binary files from Google's CDN and caches them
+    locally. Works on any environment with only numpy and standard library.
+
     Returns:
         tuple: ((X_train, y_train, y_train_onehot), (X_test, y_test, y_test_onehot))
             - X_train: Training images, shape (60000, 784), normalized to [0, 1]
@@ -15,45 +18,50 @@ def load_mnist():
             - y_test: Test labels, shape (10000,), integer values 0-9
             - y_test_onehot: Test labels one-hot encoded, shape (10000, 10)
     """
-    try:
-        # Try tensorflow/keras first
-        from tensorflow.keras.datasets import mnist
-        (X_train, y_train), (X_test, y_test) = mnist.load_data()
-    except ImportError:
-        try:
-            # Try standalone keras
-            from keras.datasets import mnist
-            (X_train, y_train), (X_test, y_test) = mnist.load_data()
-        except ImportError:
-            # Fallback to scikit-learn's fetch_openml
-            from sklearn.datasets import fetch_openml
-            print("Loading MNIST from scikit-learn (this may take a moment on first run)...")
-            mnist = fetch_openml('mnist_784', version=1, parser='auto')
-            X = mnist.data.astype('float32')
-            y = mnist.target.astype('int64')
-            
-            # Split into train/test (first 60000 for train, rest for test)
-            X_train = X[:60000]
-            y_train = y[:60000]
-            X_test = X[60000:]
-            y_test = y[60000:]
-            
-            # Data is already flattened from fetch_openml, but needs to be numpy arrays
-            X_train = np.array(X_train)
-            X_test = np.array(X_test)
-            y_train = np.array(y_train)
-            y_test = np.array(y_test)
-    
-    # Ensure data is in the right format
-    if len(X_train.shape) == 3:
-        # Flatten images: 28x28 -> 784
-        X_train = X_train.reshape(-1, 784).astype('float32')
-        X_test = X_test.reshape(-1, 784).astype('float32')
-    
+    import urllib.request
+    import gzip
+    import os
+
+    base_url = "https://storage.googleapis.com/cvdf-datasets/mnist/"
+    files = {
+        "train_images": "train-images-idx3-ubyte.gz",
+        "train_labels": "train-labels-idx1-ubyte.gz",
+        "test_images":  "t10k-images-idx3-ubyte.gz",
+        "test_labels":  "t10k-labels-idx1-ubyte.gz",
+    }
+
+    cache_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), ".mnist_cache")
+    os.makedirs(cache_dir, exist_ok=True)
+
+    def _download(name):
+        path = os.path.join(cache_dir, name)
+        if not os.path.exists(path):
+            print(f"Downloading {name}...")
+            urllib.request.urlretrieve(base_url + name, path)
+        return path
+
+    def _read_images(path):
+        with gzip.open(path, "rb") as f:
+            _ = int.from_bytes(f.read(4), "big")
+            n = int.from_bytes(f.read(4), "big")
+            rows = int.from_bytes(f.read(4), "big")
+            cols = int.from_bytes(f.read(4), "big")
+            return np.frombuffer(f.read(), dtype=np.uint8).reshape(n, rows * cols)
+
+    def _read_labels(path):
+        with gzip.open(path, "rb") as f:
+            _ = int.from_bytes(f.read(4), "big")
+            _ = int.from_bytes(f.read(4), "big")
+            return np.frombuffer(f.read(), dtype=np.uint8)
+
+    X_train = _read_images(_download(files["train_images"])).astype("float32")
+    y_train = _read_labels(_download(files["train_labels"])).astype("int64")
+    X_test  = _read_images(_download(files["test_images"])).astype("float32")
+    y_test  = _read_labels(_download(files["test_labels"])).astype("int64")
+
     # Normalize pixel values to [0, 1]
-    if X_train.max() > 1.0:
-        X_train /= 255.0
-        X_test /= 255.0
+    X_train /= 255.0
+    X_test  /= 255.0
     
     # One-hot encode labels
     y_train_onehot = np.zeros((y_train.shape[0], 10))
