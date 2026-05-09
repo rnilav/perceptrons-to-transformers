@@ -32,7 +32,7 @@ from pooling import max_pool_2d
 
 @st.cache_data(show_spinner="Loading MNIST…")
 def load_mnist():
-    from tensorflow.keras.datasets import mnist
+    #from tensorflow.keras.datasets import mnist
     (X_tr, y_tr), (X_te, y_te) = mnist.load_data()
 
     X_train = X_tr.reshape(-1, 784).astype("float32") / 255.0
