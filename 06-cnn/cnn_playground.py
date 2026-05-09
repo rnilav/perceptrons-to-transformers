@@ -20,7 +20,7 @@ _POST4 = os.path.join(os.path.dirname(__file__),
 if _POST4 not in sys.path:
     sys.path.insert(0, _POST4)
 
-from mnist_trainer import Network, Trainer   # FC network + training loop
+from mnist_trainer import Network, Trainer, load_mnist   # FC network + training loop
 from optimizers import Adam                  # Adam optimiser
 from convolution import convolve_2d, create_demo_filters
 from pooling import max_pool_2d
@@ -30,23 +30,28 @@ from pooling import max_pool_2d
 # MNIST loader
 # ─────────────────────────────────────────────────────────────────────────────
 
-@st.cache_data(show_spinner="Loading MNIST…")
-def load_mnist():
-    #from tensorflow.keras.datasets import mnist
-    (X_tr, y_tr), (X_te, y_te) = mnist.load_data()
 
-    X_train = X_tr.reshape(-1, 784).astype("float32") / 255.0
-    X_test  = X_te.reshape(-1, 784).astype("float32") / 255.0
-    y_train = y_tr.astype("int64")
-    y_test  = y_te.astype("int64")
+@st.cache_data
+def get_mnist():
+    return load_mnist()
 
-    def onehot(y):
-        oh = np.zeros((len(y), 10), dtype="float32")
-        oh[np.arange(len(y)), y] = 1.0
-        return oh
+# @st.cache_data(show_spinner="Loading MNIST…")
+# def load_mnist():
+#     from tensorflow.keras.datasets import mnist
+#     (X_tr, y_tr), (X_te, y_te) = mnist.load_data()
 
-    return (X_train, y_train, onehot(y_train)), \
-           (X_test,  y_test,  onehot(y_test))
+#     X_train = X_tr.reshape(-1, 784).astype("float32") / 255.0
+#     X_test  = X_te.reshape(-1, 784).astype("float32") / 255.0
+#     y_train = y_tr.astype("int64")
+#     y_test  = y_te.astype("int64")
+
+#     def onehot(y):
+#         oh = np.zeros((len(y), 10), dtype="float32")
+#         oh[np.arange(len(y)), y] = 1.0
+#         return oh
+
+#     return (X_train, y_train, onehot(y_train)), \
+#            (X_test,  y_test,  onehot(y_test))
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -334,7 +339,7 @@ def fc_vs_cnn_tab():
     run = st.button("▶  Train both models", type="primary")
 
     if run:
-        (X_train, y_train, y_train_oh), (X_test, y_test, y_test_oh) = load_mnist()
+        (X_train, y_train, y_train_oh), (X_test, y_test, y_test_oh) = get_mnist()
 
         # Both models train on the same 1000-sample subset
         n_train = 1000
