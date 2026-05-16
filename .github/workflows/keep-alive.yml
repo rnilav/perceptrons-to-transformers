@@ -20,6 +20,7 @@ jobs:
             "https://rnilav-perceptrons-to-transformers-06-cnncnn-playground-7vlhgb.streamlit.app/"
             "https://rnilav-perceptrons-to-transformers-08-rnnrnn-playground-cj8yxy.streamlit.app/"
             "https://rnilav-perceptrons-to-t-09-attentionattention-playground-7cap4z.streamlit.app/"
+            "https://rnilav-perceptrons--10-transformertransformer-playground-k4lnll.streamlit.app"
           )
 
           for url in "${urls[@]}"; do
