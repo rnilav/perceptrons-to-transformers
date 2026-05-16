@@ -1,0 +1,53 @@
+I use AI tools every day. At some point, that stopped being enough.
+
+I needed to know how a machine generates coherent responses to anything, instantly.
+
+So I went back to the beginning. Not by reading — by building.
+
+Every concept behind modern LLMs. From scratch. One at a time.
+
+Perceptron → MLP → Backpropagation → CNN → ResNets → RNN → Attention → Transformer
+
+Each step answered what the last one couldn't.
+
+I didn't follow a course. I built what I needed to understand, watched it break, and figured out why it works.
+
+By the end, I could trace every component in a Transformer — because I'd built it myself.
+
+[IMAGE: Perceptrons to Transformers — A 10-Part Series]
+
+10 posts. 9 interactive playgrounds. Open source.
+
+Not a tutorial. One person reverse-engineering LLMs and writing down what finally clicked.
+
+If you use AI and want to see under the hood — full series linked below.
+
+What concept made LLMs click for you?
+
+
+
+------------
+
+Using AI tools every day eventually leads to one question: how does a machine generate coherent responses to anything, instantly?
+
+Reading about it wasn't enough. Had to build it.
+
+Every concept behind modern LLMs. From scratch. One at a time.
+
+Perceptron → MLP → Backpropagation → CNN → ResNets → RNN → Attention → Transformer
+
+Each step answered what the last one couldn't.
+
+No course. No textbook. Just building what needed understanding, watching it break, figuring out why it works.
+
+By the end: able to trace every component in a Transformer — because each one was built by hand.
+
+[IMAGE: Perceptrons to Transformers — A 10-Part Series]
+
+10 posts. 9 interactive playgrounds. Open source.
+
+Not a tutorial. One person reverse-engineering LLMs and documenting what finally clicked.
+
+If you use AI and want to see under the hood — full series linked below.
+
+What concept made LLMs click for you?
