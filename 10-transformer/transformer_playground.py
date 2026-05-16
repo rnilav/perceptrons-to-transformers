@@ -107,7 +107,12 @@ st.title("⚡ Tiny GPT: Generate Shakespeare")
 st.markdown(
     "Two pretrained decoder-only Transformers. "
     "Type a prompt, pick a model, generate instantly."
-    "These are tiny models — 112K and 826K parameters compared to billions in production LLMs. The goal isn't to generate good text. It's to show what scale does: one model produces near-random output, the other produces recognizable structure. Same architecture, 7× more parameters, visible difference"
+)
+
+st.info(
+    "**Note:** These are tiny models — 112K and 826K parameters compared to billions in production LLMs. "
+    "The goal isn't to generate good text. It's to show what scale does: one model produces near-random output, "
+    "the other produces recognizable structure. Same architecture, 7× more parameters, visible difference."
 )
 
 # Check if pretrained models exist
