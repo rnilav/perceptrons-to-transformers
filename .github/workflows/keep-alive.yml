@@ -1,0 +1,29 @@
+name: Keep Streamlit Apps Alive
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'  # every 6 hours
+  workflow_dispatch:        # allow manual trigger from GitHub Actions UI
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping all Streamlit apps
+        run: |
+          urls=(
+            "https://perceptrons-to-transformers-23pcqtappwdfpdoywndoewt.streamlit.app/"
+            "https://rnilav-perceptro-02-multi-layer-perceptronmlp-playground-f24pnx.streamlit.app/"
+            "https://rnilav-perceptrons-03-backpropagationbackprop-playground-tlr5ql.streamlit.app/"
+            "https://rnilav-perceptron-04-optimizationoptimization-playground-anxskw.streamlit.app/"
+            "https://rnilav-percep-05-regularizationregularization-playground-z72npw.streamlit.app/"
+            "https://rnilav-perceptrons-to-transformers-06-cnncnn-playground-7vlhgb.streamlit.app/"
+            "https://rnilav-perceptrons-to-transformers-08-rnnrnn-playground-cj8yxy.streamlit.app/"
+            "https://rnilav-perceptrons-to-t-09-attentionattention-playground-7cap4z.streamlit.app/"
+          )
+
+          for url in "${urls[@]}"; do
+            echo "Pinging $url"
+            status=$(curl -s -o /dev/null -w "%{http_code}" --max-time 30 "$url")
+            echo "  → HTTP $status"
+          done
