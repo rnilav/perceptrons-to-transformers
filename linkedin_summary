@@ -26,7 +26,7 @@ What concept made LLMs click for you?
 
 
 
-------------
+------------ version-2
 
 Using AI tools every day eventually leads to one question: how does a machine generate coherent responses to anything, instantly?
 
@@ -51,3 +51,36 @@ Not a tutorial. One person reverse-engineering LLMs and documenting what finally
 If you use AI and want to see under the hood — full series linked below.
 
 What concept made LLMs click for you?
+
+Every time I used an LLM, the same question kept nagging:
+how does it actually work?
+
+Not "it predicts the next word." The real version.
+What each layer does. Why this architecture won.
+
+Reading wasn't getting me there. So I built it.
+
+10 components. From scratch. NumPy throughout,
+PyTorch only at the end.
+
+Perceptron → MLP → Backprop → Optimization → Regularization
+→ CNNs → BatchNorm & ResNets → RNNs → Attention → Transformer
+
+Each one answered what the previous one couldn't.
+Backprop fixed what perceptrons couldn't learn.
+ResNets fixed what depth broke.
+Attention fixed what RNNs forgot.
+
+Strip away the hype — an LLM is math arranged into architecture, filled with data, forged by compute, tempered by training.
+
+By post 10, a small GPT trained on Shakespeare —
+every line of it traceable to an earlier post.
+
+[IMAGE: Perceptrons to Transformers — A 10-Part Series]
+
+10 posts. 9 interactive playgrounds. Open source.
+
+Not a tutorial. One person trying to actually
+understand LLMs, post by post.
+
+Series link below. Start anywhere.
