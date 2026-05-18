@@ -17,7 +17,9 @@ jobs:
           node-version: '20'
 
       - name: Install Playwright
-        run: npx playwright install chromium --with-deps
+        run: |
+          npm install playwright
+          npx playwright install chromium --with-deps
 
       - name: Visit all Streamlit apps with headless browser
         run: |
